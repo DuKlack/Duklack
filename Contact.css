@@ -1,0 +1,71 @@
+.Suvey {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    justify-content: flex-start;
+}
+.contact-info {
+    margin-left: 20px;
+}
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-form {
+    padding-right: 10%;
+    max-width: 70%;
+    flex-grow: 1;
+}
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+.contact-form .inline-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form input[name="name"] {
+    width: 100%;
+}
+.contact-form textarea[name="message"] {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font: 1em sans-serif;
+}
+.contact-form input[type="submit"] {
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+    background: #4cae4c;
+}

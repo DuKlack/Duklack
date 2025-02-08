@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        
+    </style>
+    <header>
+        <link rel="stylesheet" href="header.css">
+        <script src="header.js"></script>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Semplice__2_-removebg-preview.png" alt="Vegan To-Go",width=auto, height= auto>
+            </div>
+            <ul class="nav-links">
+                <li><a href="CheeseStick.html">Home</a></li>
+                <li><a href="menu.html">Restaurant Menu</a></li>
+                <li><a href="Contact.html ">Contact Us</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+            <a href="#" class="order-btn">Order Online</a>
+        </nav>
+    </header>
+</head>
+<body>
+
+    <link rel="stylesheet" href="heroes.css">
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Semplice Verder</h1>
+            <p>Vegan for You</p>
+            <a href="menu.html" class="menu-btn">To Go Menu</a>
+        </div>
+    </section>
+
+<link rel="stylesheet" href="menu.css">
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div id="hight_light"></div>
+        <div class="swiper-pagination"></div>
+        
+        
+
+    </div>
+
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+ window.onload = function () {
+    const swiperElement = document.querySelector(".swiper");
+    const swiperWrapper = swiperElement.querySelector(".swiper-wrapper");
+    const swiperSlides = swiperElement.querySelectorAll(".swiper-slide");
+
+    if (swiperSlides.length === 0) {
+        console.error("No .swiper-slide elements found.");
+        return;
+    }
+
+    swiperSlides.forEach((slide) => {
+        const clonedSlide = slide.cloneNode(true);
+        swiperWrapper.appendChild(clonedSlide);
+    });
+
+    const swiper = new Swiper(swiperElement, {
+        slidesPerView: "auto",
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+};
+</script>
+
+
+
+<div class=" Menu" id="food_name"></div>
+
+<script src="menu.js"></script>
+ 
+
+      <div class="footer">
+        <footer>
+        <link rel="stylesheet" href="footer.css">
+        <div class="Social Media">
+          <a href="https://www.facebook.com/"><img src="food img/facebook-7678778_1280.png" alt="facebook" width="100" height="100" /></a>
+          <a href="https://www.instagram.com/"><img src="food img/instagram-7678783_1280.png" alt="instagram"width="100" height="100" /></a>
+    
+          <a href="https://www.google.com/map"> Adress</a>
+        </div>
+    
+      
+          <div class="contract">
+            <p>Phone: 123-456-7890</p>
+            <br>
+            <p>Email:xxxxx@gmai.com</p>
+          </div>
+          <div class=" Order">
+           
+          </div>
+          <div class="location">
+            <p>Monday-Friday: 9am-9pm</p>
+            <p>Saturday-Sunday: 10am-10pm</p>
+    
+          </div>
+        </footer>
+    
+      </div>
+    </body>
+    </html>

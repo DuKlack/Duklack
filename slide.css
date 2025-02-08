@@ -1,0 +1,22 @@
+.Slide {
+    background-color: black;
+    position: relative;
+    margin: auto;
+    }
+    
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(32, 182, 57)
+}
+.Slide img
+ {
+    width: 100%;
+    float: center;
+    opacity: 0.4;
+    height: 700px;
+    display: none
+ }
+

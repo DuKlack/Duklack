@@ -1,0 +1,29 @@
+if (intervalId) {
+    clearInterval(intervalId);
+} 
+slides.forEach((slide) => {
+     slide.style.display = 'none';
+});
+if (slideIndex >= 0 && slideIndex < slides.length) {
+    slides[slideIndex].style.display = 'inline-block';
+}
+intervalId = setInterval(nextSlide, 3000);
+//console.log(intervalId);//
+}
+
+
+function nextSlide() {
+slideIndex++;
+if (slideIndex >= slides.length) {
+    slideIndex = 0;
+}
+showSlide(slideIndex);
+
+}
+function prevSlide() {
+slideIndex--;
+if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+}
+showSlide(slideIndex);
+}
